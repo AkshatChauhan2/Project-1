@@ -154,22 +154,6 @@ export default function Login() {
 
           {/* Login Form */}
           <div className="space-y-6">
-            {/* Input Type Toggle */}
-            <div className="flex justify-center mb-6">
-              <button
-                type="button"
-                onClick={toggleInputMode}
-                className="group relative px-8 py-3 bg-gradient-to-r from-blue-100 to-cyan-100 hover:from-blue-200 hover:to-cyan-200 text-blue-700 font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-              >
-                <span className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                  </svg>
-                  <span>Use {inputType === 'email' ? 'Phone' : 'Email'}</span>
-                </span>
-              </button>
-            </div>
-
             {/* Email/Phone Input */}
             <div className="group">
               <label className="block text-base font-bold text-gray-700 mb-3 flex items-center space-x-2">
@@ -210,20 +194,6 @@ export default function Login() {
                   <div className="w-2.5 h-2.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full animate-pulse"></div>
                 </div>
               </div>
-            </div>
-
-            {/* Privacy Notice */}
-            <div className="flex items-start space-x-3 pt-2 bg-gradient-to-r from-green-50 to-emerald-50 p-5 rounded-xl border border-green-200">
-              <div className="flex-shrink-0 mt-0.5">
-                <div className="w-6 h-6 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center">
-                  <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-              <p className="text-sm text-gray-700 font-medium leading-relaxed">
-                🛡️ Your contact info is <span className="font-bold text-green-700">never shared</span>. We use privacy-preserving methods to protect your identity.
-              </p>
             </div>
 
             {/* Submit Button */}
